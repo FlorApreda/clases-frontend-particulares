@@ -1,0 +1,241 @@
+/* El módulo flexbox de CSS es una nueva forma de organizar, distribuir y alinear el layout de elementos css, 
+permitiéndoles incluso ocupar espacio de contenedores con tamaño desconocido o variable (de ahí lo "flexible").
+La idea básica de flexbox es darle al contenedor la capacidad de distribuir su espacio sobrante entre cada uno 
+de los items que contiene, permitiéndoles crecer o achicarse según corresponda el caso.*/
+
+.container {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+/* display:flex es la propiedad que le vamos a agregar al contenedor para volverlo un contenedor flexible. */
+
+.cubito {
+	width: 100px;
+	height: 100px;
+}
+
+.azul {
+	background-color: #3f51b5;
+}
+
+.violeta {
+	background-color: #7e57c2;
+}
+
+.rosa {
+	background-color: #f48fb1;
+}
+
+/* FLEX-DIRECTION:
+Establece la dirección principal en la que se van a colocar los elementos dentro del contenedor.
+
+-row
+Posiciona los elementos a lo largo del eje X, en fila, horizontalmente:
+
+.container {
+    display: flex;
+    flex-direction: row;
+} 
+
+-row-reverse
+Posiciona todos los elementos a lo largo del eje X, pero de atrás hacia adelante.
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+} 
+
+-column
+Posiciona todos los elementos a lo largo del eje Y, verticalmente, en columna.
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+-column-reverse
+Posiciona todos los elementos a lo largo del eje Y, pero de atrás hacia adelante
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+} */
+
+.direction {
+	flex-direction: column;
+}
+
+/* FLEX-WRAP:
+Le indica al contenedor si puede distribuir los elementos en más de una línea a medida que se éste se va a chicando.
+El valor por defecto es no-wrap.
+
+.container {
+    flex-wrap: wrap;
+} 
+
+.container {
+    flex-wrap: wrap-reverse;
+} */
+
+.wrap {
+	flex-wrap: nowrap;
+}
+
+/*
+
+JUSTIFY-CONTENT:
+Le indica al contendor cómo distribuir los elmentos cuando hay espacio libre.
+
+- flex-start
+Posiciona los elementos al comienzo del contenedor (por defecto)
+
+.container {
+    justify-content: flex-start;
+}
+
+- flex-end
+Posiciona los elementos al final del contenedor.
+
+.container {
+    justify-content: flex-end;
+}
+
+- center
+Posiciona los elementos en el medio del contenedor.
+
+.container {
+    justify-content: center;
+}
+
+- space-around
+Les da a todos los elementos la misma distancia de separación a ambos lados.
+Los items de los extremos están más cerca del borde que de los items, porque entre el borde y 
+ellos hay una distancia de separación, y entre ellos y los items, una por cada uno
+
+.container {
+    justify-content: space-around;
+}
+
+- space-between
+Posiciona un elemento al principio y otro al final del contenedor, y distribuye los restantes entre estos dos, 
+con espacio equitativo entre ellos.
+
+.container {
+    justify-content: space-between;
+}
+
+- space-evenly
+Posiciona los elementos de forma tal que el espacio entre ellos y entre los bordes es el mismo.
+
+.container {
+    justify-content: space-evenly;
+}
+*/
+
+.justify-content {
+	justify-content: space-evenly;
+}
+
+/* ALIGN-ITEMS
+Define como los items se alinean en el eje perpendicular al eje del contenedor.
+
+- flex-start
+Posiciona los elmententos al principio de la línea perpendicular al eje del contendor.
+
+.container {
+    align-items: flex-start;
+} 
+
+- flex-end
+Posiciona los elementos al final de la línea perpendicular al eje del contenedor.
+
+.container {
+    align-items: flex-end;
+}
+
+- center
+Posiciona los elementos en el medio de la línea perpendicular al eje del contenedor.
+
+.container {
+    align-items: center;
+} 
+
+- stretch
+Posiciona los elementos para que llenen todo el espacio posible a través de la línea perpendicular 
+al eje del contenedor (por defecto)
+
+.container {
+    align-items: stretch;
+}
+
+- baseline
+Los elementos se distribuyen de forma tal que la base de línea del contenido de ellos queda alineado.
+
+.container {
+    align-items: baseline;
+}
+
+*/
+
+.align-items {
+	align-items: center;
+	height: 250px;
+	border: 1px solid black;
+}
+
+/* ALIGN-CONTENT
+
+Funciona como justify-content, pero distribuyendo el espacio que hay a lo largo del eje perpendicular al eje contenedor. 
+Debe usarse en combinación con flex-wrap, ya que no funcuina cuando el contenedor tiene una sola línea de elementos.
+
+-flex-start
+
+.container {
+    align-content: flex-start;
+} 
+
+-flex-end
+
+.container {
+    align-content: flex-end;
+} 
+
+-center
+
+.container {
+    align-content: center;
+} 
+
+-space-around
+
+.container {
+    align-content: space-around;
+} 
+
+-space-between
+
+.container {
+    align-content: space-between;
+} 
+
+-stretch
+
+.container {
+    align-content: stretch;
+}
+*/
+
+.align-content {
+	align-content: flex-start;
+	height: 250px;
+	border: 1px solid black;
+	flex-wrap: wrap;
+}
+
+.center {
+	height: 250px;
+	border: 1px solid black;
+	align-items: center; /*verticalmente al centro*/
+	justify-content: center; /*horizontalmente al centro*/
+}

@@ -1,0 +1,54 @@
+<!--TABLAS-->
+
+<!-- para mostrar datos tabulados podemos utilizar el tag table-->
+<!--Dentro de nuestra tabla tenemos filas y columnas-->
+
+<table>
+	<tr>
+		<!--Para crear una fila utilizamos el elemento tr (Table Row o fila de una tabla)-->
+		<td>Primer celda de la primer fila</td>
+		<!--Table Data o dato de la tabla: las filas tienen como contenidos elementos del tipo celda td-->
+		<td>Segunda celda de la primer fila</td>
+	</tr>
+	<tr>
+		<td>Primer celda de la segunda fila</td>
+		<td>Segunda celda de la segunda fila</td>
+	</tr>
+</table>
+
+<!-- En el ejemplo tenemos una tabla con dos filas (tr) y cada fila tiene dos celdas(td)-->
+<!--En caso de tener una celda vacia creamos el elemento td igual, para que nuestra tabla quede bien formada.-->
+
+<!--Algunos atributos nos permiten modificar la forma en que se ven las tablas. Mas adelante vamos a usar
+CSS para darles un estilo. 
+En el ejemplo usamos bgcolor (background color) para darle un color de fondo, style="color: blue;" para asignarle un color a
+al texto, y border para definir un borde con un valor numerico en pixeles-->
+
+<table border="1px" bgcolor="gray">
+	<thead>
+		<!--El elemento thead define el encabezado de la tabla-->
+		<tr>
+			<th>descripcion columna</th>
+			<!-- Podemos usar el tag th para definir un table heading o encabezado de tabla. Funciona tanto 
+			para encabezados de columnas como de filas.-->
+			<th>descripcion columna</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!--El elemento tbody va a definir el cuerpo de nuestra tabla-->
+		<tr>
+			<td bgcolor="white">Primer celda de la primer fila</td>
+			<td>Segunda celda de la primer fila</td>
+		</tr>
+		<tr>
+			<td>Primer celda de la segunda fila</td>
+			<td>Segunda celda de la segunda fila</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<!--Con el elemento tfoot definimos el pie de tabla-->
+		<tr>
+			<td style="color: blue;">Celda del pie</td>
+		</tr>
+	</tfoot>
+</table>

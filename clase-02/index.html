@@ -1,0 +1,129 @@
+<!-- Esto es un comentario -->
+<!-- HTML = HyperText Markup Language-->
+<!-- Es un lenguaje de marcado, las "marcas" son etiquetas, que son palabras claves ya definidas. 
+	Cada etiqueta le indica al navegador que lelemnto mostrar y con que contenido-->
+
+<!DOCTYPE html>
+<!--DOCTYPE le indica al navegador que el tipo de version de HTML que vamos a usar es HTML5-->
+<html lang="en">
+	<!-- html es la etiqueta troncal que contiene a todas las demas. lang indica el lenguaje principal de nuestra pagina, al navegador-->
+	<head>
+		<!--head contiene informacion extra de nuestro sitio web. No se ven los elementos que hay en ella. -->
+		<meta charset="UTF-8" />
+		<!--charset le indica al navegador que set de caracteres vamos a utilizar. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- con esto indicamos que el ancho de nuestra pagina se va a corresponder con el del dispositivo,
+		y que el zoom inicial sea del 100%-->
+		<title>The Mandalorian</title>
+		<!--title es el titulo de nuestro sitio web. Se va a ver en el tab y cuando se guardeen marcadores-->
+	</head>
+	<body>
+		<!--body es donde vamos a incluir los elementos que van a ser visibles en nuestra pagina.-->
+
+		<!-- ETIQUETAS: actuan como contenedores. Describen los datos o informacion contenida entre 
+			la etiqueta de apertura (<) y la de cierre (>)-->
+		<section id="titulo-img">
+			<h1 class="titulo-principal">The Mandalorian</h1>
+			<!-- los tag h crean titulos o encabezados, el h1 es el de mayor jerarquia, sera nuestro titulo principal. 
+				La de menor jerarquia es h6-->
+			<!-- atributos height para la altura y width para el ancho -->
+			<img
+				src="https://hipertextual.com/files/2020/01/hipertextual-es-figura-baby-yoda-mas-real-que-podras-comprar-2020062519.jpeg"
+				alt="Imagen de baby yoda"
+				height="300"
+				width="700"
+			/>
+			<!-- Esta etiqueta no tiene contenido, y utiliza la apertura y cierre en una sola estructura.-->
+			<!--El tag img contendra nuestra imagen. Para establecer el contenido utilizamos el atributo src
+			(de source o fuente). El contenedor, por defecto, va a tomar el tama;o original de la imagen, 
+			por eso en nuestro ejemplo le asignamos un ancho y altura que queremos que tenga.-->
+
+			<!--src acepta tanto rutas absolutas como relativas
+			Ej: 
+			Imagenes con rutas relativas:
+			<img src="imagenes/mifoto.jpg" />
+
+			Salgo de una carpeta, entro a la carpeta imágenes y busco el archivo mifoto.jpg
+			<img src="../imagenes/mifoto.jpg" />
+
+			Imagen con ruta absoluta:
+			<img src="http://images6.fanpop.com/image/photos/39500000/il-570xN-917420114-2kdu-rick-and-morty-39567961-300-370.jpg" /> -->
+
+			<!-- El atributo alt establece un texto descriptivo de la imagen, se utiliza para usuarios de lectores de pantalla o 
+				cuando no puede cargarse la imagen-->
+		</section>
+		<section id="texto">
+			<article>
+				<p>
+					El mandaloriano (en inglés <em>The Mandalorian</em>) es una serie de
+					televisión web de ópera espacial y space western estadounidense que se
+					estrenó en Disney+ el 12 de noviembre de 2019 en EE. UU. En España, la
+					serie se preestrenó en Mediaset España el 24 de marzo de 2020.
+				</p>
+				<!--etiqueta de parrafo. Es un elemento en bloque, por defecto nuestro navegador nos va a mostrar un parrafo por linea-->
+			</article>
+			<p>
+				Ubicada en el universo de Star Wars creado por George Lucas, la serie
+				tiene lugar unos años después de los eventos de Return of the Jedi, y
+				sigue a un solitario pistolero más allá de los alcances de la República.
+				Jon Favreau se desempeñó como guionista, creador y showrunner para la
+				serie, <br />y es productor ejecutivo junto con Dave Filoni, Kathleen
+				Kennedy y Colin Wilson. La serie está protagonizada por Pedro Pascal,
+				Carl Weathers, Gina Carano, Nick Nolte, Emily Swallow, Werner Herzog,
+				Giancarlo Esposito y Omid Abtahi.
+			</p>
+			<!-- con la etiqueta br forzamos un salto de linea-->
+		</section>
+		<hr />
+		<!-- por medio del tag hr, dibujamos una linea divisoria-->
+		<div>
+			<h2>
+				Hay ocho episodios en la
+				<a href="https://es.wikipedia.org/wiki/El_Mandaloriano" target="_blank"
+					>primera temporada</a
+				>:
+			</h2>
+		</div>
+		<!-- Por medio del atributo href vamos a poder vincular documentos. 
+		El atributo href acepta una dirección absoluta, relativa o un email como valor 
+		y define de que tipo de hipervínculo es. Entre la etiqueta de apertura y cierre 
+		ponemos el contenido del link-->
+
+		<!--ejemplos de rutas absolutas y relativas:
+		<a href="http://yahoo.com">Abrir Yahoo</a>
+		<a href="c:\Usuarios\mi_nombre\mi_cv.pdf">Mirá mi CV</a>-->
+
+		<!-- Con el atributo target que tienen los hipervinculos y el valor _blank, establecemos que queremos 
+		que ese documento se abra en una nueva pestaña en nuestro browser-->
+
+		<ol>
+			<!--lista ordenada-->
+			<li>paso 1</li>
+			<!-- los "li" son los items de nuestra lista-->
+			<li>paso 2</li>
+			<br />
+			<br />
+			<li>paso 3</li>
+		</ol>
+
+		<ul>
+			<!-- lista desordenada-->
+			<li>siberia</li>
+			<li>nina</li>
+			<li>elise</li>
+		</ul>
+
+		<!-- las listas se pueden anidar, es decir, podemos meter como contenido de un elemento de la lista, una nueva lista-->
+		<ul>
+			<li>item 1</li>
+			<ol>
+				<li>skfnkf</li>
+				<li>kadjghdskj</li>
+			</ol>
+		</ul>
+
+		<a href="mailto:pepe@gmail.com">Contacto</a>
+		<!-- mailto es un tipo de valor especial, con el le decimos a nuestro navegador 
+			que queremos abrir algun programa de envio de mails, que ya tenga instalado nuestro usuario-->
+	</body>
+</html>

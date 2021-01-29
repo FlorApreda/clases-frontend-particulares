@@ -1,0 +1,10 @@
+.mi-clase-padre {
+	display: block;
+	padding: 25px;
+	border: 1px solid #444444;
+}
+
+.mi-clase-padre .mi-clase-hije {
+	width: 600px;
+	color: cornflowerblue;
+}
